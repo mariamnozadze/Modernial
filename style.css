@@ -1,0 +1,348 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  padding: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo-holder {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 30px;
+}
+
+header .logo-holder img {
+  height: 100px;
+}
+
+header nav {
+  -webkit-box-flex: 0.99;
+      -ms-flex: 0.99;
+          flex: 0.99;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  font-size: 20px;
+}
+
+header nav ul li a {
+  display: inline-block;
+  color: #707070;
+  padding: 15px 20px;
+}
+
+header nav ul li a:hover {
+  text-decoration: none;
+  color: #f8f5f1;
+  font-weight: 400;
+  background-color: #243625;
+  border-radius: 1.5em;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header nav ul li.active a {
+  background: #243625;
+  font-weight: bold;
+  border-radius: 1.5em;
+  color: #f8f5f1;
+  text-decoration: none;
+}
+
+.hero-banner .slider .slide {
+  height: 640px;
+  background-color: #f8f5f1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner .slider .slide::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(/imgs/bottom-wave.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.hero-banner .slider .slide .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-image: url(./imgs/banner-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.hero-banner .slider .slide .image:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(imgs/wave-haikei.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-banner .slider .slide .content-holder {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.hero-banner .slider .slide .content {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 30px;
+}
+
+.hero-banner .slider .slide .content .title {
+  font-size: 48px;
+  color: #707070;
+  font-weight: bold;
+}
+
+.hero-banner .slider .slide .content .subtitle {
+  font-size: 24px;
+  color: #b28585;
+}
+
+.call-to-action {
+  background: #243625;
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 500;
+}
+
+.call-to-action .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.call-to-action .row input {
+  border-radius: 1.5em;
+  background: white;
+  color: #141414;
+  border: none;
+  width: 100%;
+  padding: 15px;
+}
+
+.message-1 {
+  margin-left: 100px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  background: #f8f5f1;
+}
+
+.message-1 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message-1 .row .title {
+  font-size: 35px;
+  letter-spacing: -1px;
+  color: #707070;
+}
+
+.message-1 .row img {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  padding-left: 30px;
+}
+
+.message-1 .row p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #707070;
+}
+
+.message-1 .row a:hover {
+  background-color: #243625;
+  color: white;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.message-1 .row .btn {
+  background: white;
+  padding: 0.65em 2em;
+  font-size: 20px;
+  border-radius: 1.5em;
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.message-2 {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  background: #f8f5f1;
+}
+
+.message-2 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.message-2 .row .title {
+  font-size: 35px;
+  letter-spacing: -1px;
+  color: #707070;
+}
+
+.message-2 .row img {
+  border-radius: 58% 42% 43% 57% / 48% 21% 79% 52%;
+  padding-left: 30px;
+}
+
+.message-2 .row p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #707070;
+}
+
+.message-2 .row a:hover {
+  background-color: #243625;
+  color: white;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.message-2 .row .btn {
+  background: white;
+  padding: 0.65em 2em;
+  font-size: 20px;
+  border-radius: 1.5em;
+  -webkit-box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+#footer {
+  background-color: #243625;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+  font-size: 20px;
+  position: relative;
+}
+
+#footer .footer-wave {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+}
+
+#footer .footer-wave img {
+  width: 100%;
+}
+
+#footer .text-right i {
+  font-size: 25px;
+  margin-left: 0.7em;
+  margin-right: 0.7em;
+}
+
+#footer .text-right i:hover {
+  background-color: white;
+  color: #243625;
+}
+
+#footer .col-lg-12 {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer .col-lg-3 a:hover {
+  background-color: white;
+  color: #243625;
+  border-radius: 50%;
+  padding: 15px 25px;
+  font-weight: 700;
+}
+
+#footer .col-lg-4 a:hover {
+  background-color: white;
+  color: #243625;
+  border-radius: 50%;
+  padding: 15px 25px;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */

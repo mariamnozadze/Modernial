@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Modernial</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-holder">
+        <div class="logo">
+          <a href="index.html">
+            <img src="imgs/logo-img.png" />
+          </a>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Testimonials</a>
+          </li>
+          <li>
+            <a href="#">Faq</a>
+          </li>
+          <li>
+            <a href="#footer">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero-banner">
+      <div class="slider">
+        <div class="slide">
+          <div class="image"></div>
+          <div class="content-holder">
+            <div class="content">
+              <div>
+                <div class="title">Your Key Message, Can Take Up Two Lines</div>
+                <div class="subtitle">Your supporting message here.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="email-request">
+              Enter your email here to become part of our mailing list
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <input type="text" placeholder="Email Adress" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="message-1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="title">Minor Title Adding Important Information</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellendus, repudiandae nisi voluptatum dolores doloribus
+              corporis illum in sed unde eos molestias earum accusamus dicta
+              minus a. Rerum in maiores necessitatibus?
+            </p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="imgs/img (1).jpg" alt="message-1" height="450px" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="message-2">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="imgs/crop (2).jpg" alt="message-1" height="450px" />
+          </div>
+          <div class="col-lg-6">
+            <div class="title">Minor Title Adding Important Information</div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Repellendus, repudiandae nisi voluptatum dolores doloribus
+              corporis illum in sed unde eos molestias earum accusamus dicta
+              minus a. Rerum in maiores necessitatibus?
+            </p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-wave">
+        <img src="imgs/footer-wave.png" alt="overlay" />
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">PH: <a href="#">+995 500 00 00 00</a></div>
+          <div class="col-lg-4">EM: <a href="#">hello@examplesite.com</a></div>
+          <div class="col-lg-5 text-right">
+            <a href="">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="row copyright">
+          <div class="col-lg-12">
+            Copyright Your Business - Modernial Marketing Website
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--scrollreveal JS -->
+    <script>
+      const sr = ScrollReveal();
+      sr.reveal(".logo", { delay: 300, duration: 2000, origin: 'right' });
+      sr.reveal("nav", { delay: 500, duration: 3000});
+      sr.reveal(".image", { delay: 500, duration: 3000});
+      sr.reveal(".content", { delay: 600, duration: 3000});
+    </script>
+  </body>
+</html>
