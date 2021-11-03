@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
     <!--scroll reveal-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+
 
     <link rel="stylesheet" href="style.css" />
     <title>Modernial</title>
@@ -158,13 +158,18 @@
         </div>
       </div>
     </footer>
-    <!--scrollreveal JS -->
-    <script>
-      const sr = ScrollReveal();
-      sr.reveal(".logo", { delay: 300, duration: 2000, origin: 'right' });
-      sr.reveal("nav", { delay: 500, duration: 3000});
-      sr.reveal(".image", { delay: 500, duration: 3000});
-      sr.reveal(".content", { delay: 600, duration: 3000});
-    </script>
+
+<!--GSAP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script>
+    gsap.from(".logo", { opacity: 0, duration: 1, delay: 0.5, y: -100 });
+    gsap.from("nav", { opacity: 0, duration: 1, delay: 0.5, x: 20 });
+    gsap.from(".image", { opacity: 0, duration: 1, delay: 1, x: -100 });
+    gsap.from(".content", { opacity: 0, duration: 1, delay: 1, x: 100 });
+    gsap.from(".call-to-action", { opacity: 0, duration: 1, delay: 0.5, y: 100 });
+    gsap.from(".message-1", { opacity: 0, duration: 1, delay: 0.5, x: -100 });
+    gsap.from(".message-2", { opacity: 0, duration: 1, delay: 0.5, x: 100 });
+
+  </script>
   </body>
 </html>
